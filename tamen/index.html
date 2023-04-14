@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Acrostia Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--fonts-->
+<link href='http://fonts.useso.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+
+<script src="js/responsiveslides.min.js"></script>
+	<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+  <!---->
+  <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+
+
+</head>
+<body> 
+<!--header-->
+<!--banner-->
+<div class="banner" id="home">
+	<div class="slider" >
+	    <div class="callbacks_container">
+	      <ul class="rslides" id="slider">
+	        <li>
+	          <img src="images/banner.jpg" alt="">
+			  <div class="banner-matter">
+			  <img class="img-responsive"  src="images/good.png" alt=" " />
+			 
+			  </div>
+	        </li>
+	        <li>
+	          <img src="images/banner1.jpg" alt=""> 
+			<div class="banner-matter">
+				<img  class="img-responsive" src="images/good.png" alt=" " />
+			  
+			  </div>			  
+	        </li>
+	        <li>
+	          <img src="images/banner2.jpg" alt="">
+				<div class="banner-matter">
+				<img class="img-responsive" src="images/good.png" alt=" " />
+			  
+			  </div>
+	        </li>
+	      </ul>
+	  </div>
+	  </div>
+	  </div>
+	<!---->
+	<div class="header" >
+			<div class="container">
+			<div class="fixed-header">
+
+			<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt=" " /></a>
+			</div>
+			
+				<div class="top-nav cssmenu">
+				<nav class="nav clearfix">
+					<a id="menu-toggle" class="anchor-link"><img src="images/menu.png" alt="" /></a>
+					<ul class="simple-toggle" id="nav">
+			        	<li class="current"><a href="#home" class="scroll">首页</a></li>		        	
+			        	<li ><a href="#services" class="scroll"> 防疫小贴士</a></li>
+
+			        	<li><a href="#work" class="scroll">他们</a></li>
+			        	<li><a href="#contact" class="scroll">总结</a></li>
+			        </ul>
+				</nav>
+				
+				<script type="text/javascript">
+					  $(document).ready(function() {
+					
+						$('#menu-toggle').click(function () {
+					      $('#nav').toggleClass('open');
+					      e.preventDefault();
+					    });
+					    
+					});
+				</script>
+				<!---->
+				<script src="js/jquery.nav.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#nav').onePageNav({
+			begin: function() {
+			console.log('start')
+			},
+			end: function() {
+			console.log('stop')
+			}
+		});
+	});
+	</script>
+				
+				</div>
+				<div class="clearfix"> </div>
+				</div>
+		</div>
+	</div>
+	
+		<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header").addClass("fixed");
+				}else{
+					$(".header").removeClass("fixed");
+				}
+			 });
+			 
+		});
+		</script>
+		<!-- /script-for sticky-nav -->
+
+<!--content-->
+	<div class="content">
+	<!---->
+		<div class="services" id="services">
+			<div class="container">
+				<div class="service-head">
+					<h3>防疫小贴士</h3>
+					
+					<p></p>
+				</div>
+				<div class=" services-grid">
+					<div class="col-md-4 service-grid">
+						<a href="#"><img class="img-responsive" src="images/s1.png" alt=" " /></a>
+						<h5>戴口罩</h5>
+						<p>外出时戴口罩，与人保持距离，不去人员密集的场所。在就医、拥挤、乘电梯、乘坐公共交通工具等室内密闭场所，一定要戴好口罩。						</p>
+					</div>
+					<div class="col-md-4 service-grid">
+						<a href="#"><img class="img-responsive" src="images/s2.png" alt=" " /></a>
+						<h5>少流动</h5>
+						<p>严格遵守疫情防控要求不放松，积极响应内防输入、外防输出疫情防控基本要求，按照“三减少一加强”原则（减少人员流动、减少旅途风险、减少人员聚集、加强个人防护）。</p>
+					</div>
+					<div class="col-md-4 service-grid">
+						<a href="#"><img class="img-responsive" src="images/s3.png" alt=" " /></a>
+						<h5>勤洗手</h5>
+						<p>很多人只记得戴口罩，但是不一定勤洗手。其实，勤洗手非常重要，而且要用肥皂或洗手液和流动水清洗双手，洗手时间长度是唱2次生日快乐歌。</p>
+					</div>
+					<div class="col-md-4 service-grid ">
+						<a href="#"><img class="img-responsive" src="images/s4.png" alt=" " /></a>
+						<h5>加强自我健康监测</h5>
+						<p>必须坚持做好每日健康日报工作。要坚持科学佩戴口罩、勤洗手，保持良好卫生习惯。</p>
+					</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		</div>
+		<!---->
+	
+		<!---->
+		<div class="work" id="work">
+			<div class="container">
+				<div class="work-head">
+					<h3>他们</h3>
+					<p>为众人抱薪者，不可使他冻毙于风雪！ 为生命开路者， 不可使他困顿于荆棘！我必须跑得更快，才能跑赢时间；我必须跑得更快，才能从病毒手里抢回更多病人。沉舟侧畔千帆过，病树前头万木春。纵使我们每个人的力量如同小流，但只要团结起来也可汇成大江大海。</p>					
+				</div>
+				<div class=" work-top">					
+				<div class="by-type">
+					<h6>代表人物</h6>
+				</div>
+					<ul id="filters">
+						<li><span class="filter " data-filter="app card icon web">8</span></li>
+						<li><span class="filter" data-filter="app">3</span></li>
+						<li><span class="filter" data-filter="card"> 2 </span></li>
+						<li><span class="filter" data-filter="icon">3</span></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="images/p1.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						    <img class="img-responsive" src="images/p1.jpg" alt=""  /> 
+							<span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>钟南山</p>													
+						</div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p2.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						    <img class="img-responsive" src="images/p2.jpg" alt=""  />
+						    <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>陈薇</p>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p3.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p3.jpg"  alt="" />
+						     <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>李兰娟</p>
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="images/p4.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p4.jpg" alt=""  />
+						     <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>张文宏</p>	
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="images/p5.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p5.jpg" alt=""  />
+						    <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>钟南山</p>	
+		                </div>
+					</div>			
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p6.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p6.jpg" alt=""  />
+						     
+						    <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>陈薇</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p7.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p7.jpg" alt=""  />
+						     <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>李兰娟</p>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p1.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p8.jpg" alt=""  />
+						     <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>张文宏</p>
+		                </div>
+					</div>
+					<div class="clearfix"> </div>
+					</div>	
+			<!-- Script for gallery Here -->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+					});	
+					</script>
+			<!-- Gallery Script Ends -->
+			</div>
+		</div>
+		<!---->
+	<link rel="stylesheet" href="css/swipebox.css">
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+		</script>
+
+	<!---->
+
+		<!---->
+		<div class="contact" id="contact">
+			<div class="container">
+				<div class="contact-head">
+					<h3>总结</h3>
+					<p>能够战胜疫情正是有许许多多像钟南
+						山院士一样奔赴一线的医护人员，他们用自己的生命换来我们生的希望。“哪有什么白衣天使，不过是一群孩子，学着前辈的样子治病救人，和死神抢人罢了。”他们奋起抗击病毒的样子，我永远铭记心间!伟大的白求恩精神在他们身上体现得淋漓尽致!他们是“一点浩然气，千里快哉风”，为久旱的土地带来希望的甘露;他们是“春山暖日和风”，吹散前路的迷雾，融化冰封的大地。我最可爱的英雄天使!随着大量医护人员驰援湖北，物资也紧张起来。“一方有难，八方支援”。总有心怀善念的人们，尽己所能地捐献出物资。爱心人士积极捐款捐物，平日里闪闪发光的明星也放下光环，尽心尽力地帮助武汉挺过难关!我友爱的陌生人!永远别忘了英雄也不过是在危急时刻挺身而出的普通人罢了!“哪有什么岁月静好，不过是有人替你负重前行!”春寒已料峭，吾惟愿君安!
+						“志在心中，愿在行动”尽微薄之力不负青春不留遗憾。以星火之名燃青春之光，是我们青年一代的，是我们这一代的使命，更是我们青年一代的责任。新型冠状病毒的发生，全县各领域各行业干部群众积极投身防疫一线，谱写了一曲曲防控疫情，救治病人，维护社会稳定的赞歌。疫情就是命令，防控就是责任，作为一名大学生，我要在国家有难之时应积极站出来，贡献自己的一份力量，为社会做出一点力所能及的事。虽然没有奋斗在一线，但也在尽自己的绵薄之力行动着，积极完成社区安排的工作，每天都过得很充实，心里满满的幸福感，深刻体会了“奉献，友爱，互助，进步”的志愿精神，在以后生活中，我会继续弘扬志愿精神，为社会贡献一份力量，传播正能量。</p>					
+				</div>
+
+
+			</div>
+		</div>
+	</div>	
+	<!--footer-->
+	
+		  <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+		</div>
+
+
+</body>
+</html>
